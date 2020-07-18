@@ -1,36 +1,49 @@
 "use strict";
 
-// Напиши функцию findBestEmployee(employees), которая принимает объект сотрудников и возвращает имя самого продуктивного (который выполнил больше всех задач). Сотрудники и кол-во выполненых задач содержатся как свойства объекта в формате "имя":"кол-во задач".
+const findBestEmployee = function (employees) {
+  let amoutOfTasks;
+  let amoutOfEmployees;
+  let lowestAmoutOfTask = 0;
 
-// const findBestEmployee = function(employees) {
-//   // твой код
-// };
+  amoutOfTasks = Object.values(employees);
 
-// /*
-//  * Вызовы функции для проверки работоспособности твоей реализации.
-//  */
-// console.log(
-//   findBestEmployee({
-//     ann: 29,
-//     david: 35,
-//     helen: 1,
-//     lorence: 99,
-//   }),
-// ); // lorence
+  for (let i = 0; i < amoutOfTasks.length; i += 1) {
+    if (lowestAmoutOfTask <= amoutOfTasks[i]) {
+      lowestAmoutOfTask = amoutOfTasks[i];
+    }
+  }
 
-// console.log(
-//   findBestEmployee({
-//     poly: 12,
-//     mango: 17,
-//     ajax: 4,
-//   }),
-// ); // mango
+  amoutOfEmployees = Object.keys(employees);
 
-// console.log(
-//   findBestEmployee({
-//     lux: 147,
-//     david: 21,
-//     kiwi: 19,
-//     chelsy: 38,
-//   }),
-// ); // lux
+  for (const employee of amoutOfEmployees) {
+    if (employees[employee] === lowestAmoutOfTask) {
+      console.log(employee);
+    }
+  }
+
+  return;
+};
+
+/*
+ * Вызовы функции для проверки работоспособности твоей реализации.
+ */
+
+findBestEmployee({
+  ann: 29,
+  david: 35,
+  helen: 1,
+  lorence: 99,
+}); // lorence
+
+findBestEmployee({
+  poly: 12,
+  mango: 17,
+  ajax: 4,
+}); // mango
+
+findBestEmployee({
+  lux: 147,
+  david: 21,
+  kiwi: 19,
+  chelsy: 38,
+}); // lux
