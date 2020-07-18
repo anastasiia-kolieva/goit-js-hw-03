@@ -1,16 +1,22 @@
 "use strict";
 
-// Напиши функцию countProps(obj), считающую кол-во свойств в объекте. Функция возвращает число - количество свойств.
+const countProps = function (obj) {
+  let amoutOfProps = 0;
 
-// const countProps = function(obj) {
-//   // твой код
-// };
+  const objProos = Object.keys(obj);
+
+  amoutOfProps = objProos.length;
+  console.log(amoutOfProps);
+
+  return;
+};
 
 // /*
 //  * Вызовы функции для проверки работоспособности твоей реализации.
 //  */
-// console.log(countProps({})); // 0
 
-// console.log(countProps({ name: 'Mango', age: 2 })); // 2
+countProps({}); // 0
 
-// console.log(countProps({ mail: 'poly@mail.com', isOnline: true, score: 500 })); // 3
+countProps({ name: "Mango", age: 2 }); // 2
+
+countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }); // 3
