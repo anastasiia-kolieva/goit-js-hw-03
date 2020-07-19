@@ -12,6 +12,7 @@ const getAllPropValues = function (arr, prop) {
   let product;
   let propertyOfProduct;
   let valueOfProperty;
+  let findedValue;
 
   // Разбила массив на отдельные обьекты
   for (let i = 0; i < products.length; i += 1) {
@@ -20,17 +21,17 @@ const getAllPropValues = function (arr, prop) {
     propertyOfProduct = Object.keys(product);
     // масив значений свойств обьекта
     valueOfProperty = Object.values(product);
- 
+
     // если имя свойства равно  N-ному елементу масива propertyOfProduct(масив свойств)
     if (prop === propertyOfProduct[i]) {
+      findedValue = valueOfProperty[i];
       // этот N-нный елемент добавляется в масив arrOfValues
-      arrOfValues.push(valueOfProperty[i]);
+      arrOfValues.push(findedValue);
     }
   }
 
   console.log(arrOfValues);
-//   выводиться массив с одним значением, индекс которого совпадает с индексом свойства?????????
-
+  //   выводиться массив с одним значением, индекс которого совпадает с индексом свойства?????????
 
   return arrOfValues;
 };
