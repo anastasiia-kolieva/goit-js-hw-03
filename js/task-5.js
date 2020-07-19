@@ -20,7 +20,7 @@ const getAllPropValues = function (arr, prop) {
     propertyOfProduct = Object.keys(product);
     // масив значений свойств обьекта
     valueOfProperty = Object.values(product);
-
+ 
     // если имя свойства равно  N-ному елементу масива propertyOfProduct(масив свойств)
     if (prop === propertyOfProduct[i]) {
       // этот N-нный елемент добавляется в масив arrOfValues
