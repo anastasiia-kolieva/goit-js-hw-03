@@ -31,6 +31,7 @@ const getAllPropValues = function (arr, prop) {
   console.log(arrOfValues);
 //   выводиться массив с одним значением, индекс которого совпадает с индексом свойства?????????
 
+
   return arrOfValues;
 };
 
