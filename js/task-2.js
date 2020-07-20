@@ -2,14 +2,15 @@
 
 const countProps = function (obj) {
   let amoutOfProps = 0;
-
+  
   const objProos = Object.keys(obj);
-
+  
   amoutOfProps = objProos.length;
   console.log(amoutOfProps);
-
+  
   return;
-};
+  };
+
 
 // /*
 //  * Вызовы функции для проверки работоспособности твоей реализации.

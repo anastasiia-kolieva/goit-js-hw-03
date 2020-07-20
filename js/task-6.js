@@ -15,7 +15,6 @@ const calculateTotalPrice = function (allProdcuts, productName) {
       totalPrice = product.price * product.quantity;
       console.log(totalPrice);
     }
-    continue;
   }
   return totalPrice;
 };

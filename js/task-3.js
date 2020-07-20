@@ -20,8 +20,6 @@ const findBestEmployee = function (employees) {
       console.log(employee);
     }
   }
-
-  return;
 };
 
 /*

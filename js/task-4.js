@@ -12,7 +12,7 @@ const countTotalSalary = function (employees) {
 
   console.log(total);
 
-  return;
+  return total;
 };
 
 /*
