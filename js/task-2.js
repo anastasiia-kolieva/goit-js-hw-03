@@ -1,23 +1,15 @@
 "use strict";
 
 const countProps = function (obj) {
-  let amoutOfProps = 0;
-  
-  const objProos = Object.keys(obj);
-  
-  amoutOfProps = objProos.length;
-  console.log(amoutOfProps);
-  
-  return;
-  };
-
+  return Object.keys(obj).length;
+};
 
 // /*
 //  * Вызовы функции для проверки работоспособности твоей реализации.
 //  */
 
-countProps({}); // 0
+console.log(countProps({})); // 0
 
-countProps({ name: "Mango", age: 2 }); // 2
+console.log(countProps({ name: "Mango", age: 2 })); // 2
 
-countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }); // 3
+console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 })); // 3

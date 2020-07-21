@@ -8,19 +8,14 @@ const products = [
 ];
 
 const getAllPropValues = function (arr, prop) {
-  // задаём результирующий массив значений свойства
   const arrOfProperties = [];
 
-  // Перебор массива
-  // Item-елемент масива arr (один обьект в маисве обьектов)
   for (const property of arr) {
-    // Если в объекте есть заданое свойство?????
     if (property[prop]) {
-      // тогда пушим значение этого свойства в массив arrProp
       arrOfProperties.push(property[prop]);
     }
   }
-  console.log (arrOfProperties);
+  console.log(arrOfProperties);
   return arrOfProperties;
 };
 
