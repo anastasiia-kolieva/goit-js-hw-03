@@ -12,16 +12,14 @@ const calculateTotalPrice = function (allProdcuts, productName) {
 
   for (let product of products) {
     if (product.name === productName) {
-      totalPrice = product.price * product.quantity;
-      console.log(totalPrice);
+      return (totalPrice = product.price * product.quantity);
     }
   }
-  return totalPrice;
 };
 
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
  */
-calculateTotalPrice(products, "Радар"); // 5200
+console.log(calculateTotalPrice(products, "Радар")); // 5200
 
-calculateTotalPrice(products, "Дроид"); // 2800
+console.log(calculateTotalPrice(products, "Дроид")); // 2800

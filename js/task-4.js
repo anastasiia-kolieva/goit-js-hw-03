@@ -1,10 +1,9 @@
 "use strict";
 
 const countTotalSalary = function (employees) {
-  let totalSalary = [];
   let total = 0;
 
-  totalSalary = Object.values(employees);
+  const totalSalary = Object.values(employees);
 
   for (let i = 0; i < totalSalary.length; i += 1) {
     total += totalSalary[i];
